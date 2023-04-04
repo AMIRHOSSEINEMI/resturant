@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://kit.fontawesome.com/700f9cc419.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="ax/teach.png"/>
+    <title>resturant</title>
+    <style>
+      body{
+        background-color: #070d1b;
+        font-family: 'Oswald';
+        
+      }
+
+      .navbar li{
+        display: inline;
+        list-style: none;
+      }
+      .navbar a{
+        text-decoration: none;
+        color:#fce836;
+        margin: 5px;
+        font-family: 'Arial Narrow';
+        font-size: 1rem;
+        border: #fce836 1px solid;
+        border-radius: 15px;
+        padding: 5px;
+      }
+      .head{
+        display: flex;
+        justify-content: space-between;
+        color: #fce836;
+        margin: auto;
+        background-color: black;
+        border: #070d1b 1px solid;
+        border-radius: 20px;
+        width: 98%;
+        padding: 27px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .head{
+           display: flex;
+           flex-direction: column;
+        }
+        }
+      .head h1{
+        margin-top: 10%;
+      }
+      .head samp{
+        font-size: 24px;
+        color: #ffffff;
+        font-family: 'Arial Narrow';
+
+      }
+
+      .head img{
+        width: 45%; 
+      }
+
+      .kart{
+        background-image: url(ax/l-intro-1653066580.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border: #070d1b 1px solid;
+        border-radius: 20px;
+        width: 98%;
+        padding: 27px;
+        margin: auto;
+      }
+      #fried{
+        background-image: url(ax/fried2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+      }
+      .card{
+        background: rgba(255, 255, 255, .7);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        border: #ffffff 1px solid;
+        border-radius: 20px;
+      }
+      .card-img-top{
+        margin-top: 10px;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+
+      .card img:hover{
+        border-radius: 215px 0px 215px 0px;
+        transition: 0.5s;
+
+      }
+      .card-body{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      @media only screen and (min-width: 0px) and (max-width:2000px){
+        .card-body{
+          display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        }
+        }
+        @media only screen and (min-width: 1000px) {
+        .card-body{
+        display: flex;
+        flex-direction: column;
+        }
+        }
+        
+        .form{
+          border: #ffffff 1px solid;
+          border-radius :15px; ;
+        }
+        #more{
+          background-color: rgb(27, 211, 27);
+          border: rgb(27, 211, 27) 1px solid;
+          border-radius: 15px 0px 0px 15px;
+          font-size: larger;
+        }
+        #less{
+          background-color: rgb(255, 13, 13);
+          border: rgb(255, 13, 13) 1px solid;
+          border-radius: 0px 15px 15px 0px;
+          font-size: larger;
+        }
+        #tedad{
+          width: 35px;
+          border: rgb(255, 255, 255) 1px solid;
+
+        }
+        .sosial{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        @media only screen and (max-width: 1200px) {
+        .sosial{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: baseline;
+        }
+        }
+
+        .sooton{
+          color: #ffffff;
+          font-size: 24px;
+          column-count: 3; 
+          text-align: center;
+          column-rule: 1px solid #fce836;
+          background-color: black;
+          border-radius: 20px;
+          margin: auto;
+          width: 98%;
+        }
+        .sooton li{
+          list-style: none;
+        }
+
+        .foot{
+          background-color: #fce836;
+          margin: auto;
+          width: 98%;
+          border-radius: 20px;
+          font-size: larger;
+        }
+
+        .foot li{
+          list-style: none;
+          padding: 5px;
+        }
+        .payam{
+          text-align: center;
+          color: red;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">SIGN IN</a></li>
+      <li><a href="#">LOG IN</a></li>
+    </ul>
+  </div>
+  <div class="head">
+    <h1>FRESH MEAT FRESH HAMBURGER <samp><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolorum exercitationem, aperiam fugit corporis sapiente iusto voluptates</samp></h1>
+    <img src="ax/ham.png" alt="">
+  </div>
+  <br><br><br><br>
+  <h1 style="font-size: 100px; text-align: center; color: #ffffff; font-family: 'Oswald';">HamBurGer</h1>
+  <div class="kart">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="card ">
+        <img src="ax/cheeze.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/cheeze.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/cheeze.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/cheeze.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <br><br><br>
+
+  <h1 style="font-size: 100px; text-align: center; color: #ffffff; font-family: 'Oswald';">Fried</h1>
+  <div class="kart" id="fried">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="card ">
+        <img src="ax/fried.png" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/fried.png" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/fried.png" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/fried.png" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+          <form action="" class="form">
+            <button id="more">+</button>
+            <input type="text" id="tedad">
+            <button id="less">-</button>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <br><br><br><br>
+  <h1 style="font-size: 100px; text-align: center; color: #ffffff; font-family: 'Oswald';">Contact Us</h1>
+  <br><br><br>
+  <div class="sosial">
+    <div class="face"><img src="ax/telegram.png" alt=""></div>
+    <div class="insta"><img src="ax/telegram.png" alt=""></div>
+    <div class="telegram"><img src="ax/telegram.png" alt=""></div>
+    <div class="tweet"><img src="ax/telegram.png" alt=""></div>
+  </div>
+
+  <br><br><br>
+  <article class="sooton">
+    <ul>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+    </ul>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+
+    <ul>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+      <li>Lorem ipsum dolor</li>
+    </ul>
+  </article>
+  <br><br><br><br><br>
+
+  <footer class="foot">
+    <ul>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nam.</p></li>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nam.</p></li>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nam.</p></li>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nam.</p></li>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, nam.</p></li>
+    </ul>
+    <p class="payam">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius impedit ea sequi consequatur mollitia amet, dolore repellat pariatur officia tenetur laborum omnis ab nam voluptates ducimus autem tempore ex ipsam.</p>
+  </footer>
+
+
+
+   
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+    </script>   
+</body>
+</html>
